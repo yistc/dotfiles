@@ -11,6 +11,7 @@ Thumbs.db
 # virtual environment
 .venv/
 
+# vscode
 .vscode/
 
 # Logs and databases #
