@@ -106,23 +106,3 @@ set autoread
 set listchars=tab:»■,trail:■
 set list
 EOF
-
-#pyenv & python
-apt install -y make build-essential libssl-dev zlib1g-dev \
-libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
-libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
-
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-
-#pyenv PATH
-cat >>~/.profile<<EOF
-export PYENV_ROOT="\$HOME/.pyenv"
-export PATH="\$PYENV_ROOT/bin:\$PATH"
-eval "\$(pyenv init --path)"
-EOF
-
-cat >>~/.zprofile<<EOF
-export PYENV_ROOT="\$HOME/.pyenv"
-export PATH="\$PYENV_ROOT/bin:\$PATH"
-eval "\$(pyenv init --path)"
-EOF
