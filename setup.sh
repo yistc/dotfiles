@@ -1,4 +1,4 @@
-#! /usr/bin/zsh
+#!/bin/sh
 apt -y install zsh unzip curl vim git exa ripgrep lsof
 cat >>$HOME/.zshrc<<EOF
 alias ls='exa'
