@@ -1,8 +1,7 @@
 #!/bin/sh
-sudo apt -y install zsh unzip curl vim git exa ripgrep lsof
+sudo apt -y install zsh unzip curl vim git ripgrep lsof
 
 cat >>$HOME/.zshrc<<EOF
-alias ls='exa'
 alias ssh-ls="rg '^Host ([^*]+)$' ~/.ssh/config"
 alias git-all="gaa && gcam '1' && gp"
 alias surge-cli='/Applications/Surge.app/Contents/Applications/surge-cli'
