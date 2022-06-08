@@ -1,5 +1,5 @@
 #!/bin/sh
-apt -y install zsh unzip curl vim git exa ripgrep lsof
+sudo apt -y install zsh unzip curl vim git exa ripgrep lsof
 
 cat >>$HOME/.zshrc<<EOF
 alias ls='exa'
